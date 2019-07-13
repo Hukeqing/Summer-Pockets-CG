@@ -1,0 +1,23 @@
+iframe.bgm{
+    border: 0px;
+    margin: 0px 0px 0px 0px;
+    width: 330px;
+    height: 86px;
+    position: fixed;
+    right: 10px;
+    top: 10px;
+}
+img.photo{
+    width: 640px;
+    height: 360px;
+    margin-left: 20px;
+    margin-top: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+/* div.centers {
+    width: 700pt;
+    justify-content: center;
+    display: flex;
+    margin: 0 auto;
+} */
