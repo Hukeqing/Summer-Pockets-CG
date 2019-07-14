@@ -427,6 +427,9 @@ def download(id):
 
 first = 1
 end = len(source) + 1
+maxphoto = 393
+photoperpage  = 40
+maxpage = 10
 
 if mode == 1:
     first = 1
@@ -434,35 +437,35 @@ if mode == 1:
 elif mode == 2:
     pages = 0
     try:
-        pages = int(input('请输入要下载的页码（仅数字，一个整数，每一页默认下载45个图片）\n例如第一页下载 1 - 45 的图片'))
+        pages = int(input('请输入要下载的页码（仅数字，一个整数，每一页默认下载40个图片）\n例如第一页下载 1 - ' + str(photoperpage) + ' 的图片'))
     except ValueError:
         print('错误!不是数字，程序终止')
         time.sleep(10)
         exit(0)
-    if pages < 0 or pages > 9:
+    if pages < 0 or pages > maxpage:
         print('错误，超出范围，程序终止')
         time.sleep(10)
         exit(0)
-    first = pages * 45 + 1
-    end = first + 44
+    first = pages * photoperpage + 1
+    end = first + photoperpage - 1
 else:
     try:
-        first = int(input('请输入要下载的起始编号（1-401）：'))
+        first = int(input('请输入要下载的起始编号（1-' + str(maxphoto) + '）：'))
     except ValueError:
         print('错误!不是数字，程序终止')
         time.sleep(10)
         exit(0)
-    if first < 0 or first > 401:
+    if first < 0 or first > maxphoto:
         print('错误，超出范围，程序终止')
         time.sleep(10)
         exit(0)
     try:
-        end = int(input('请输入要下载的结束编号（' + str(first) + '-401）：'))
+        end = int(input('请输入要下载的结束编号（' + str(first) + '-' + str(maxphoto) + '）：'))
     except ValueError:
         print('错误!不是数字，程序终止')
         time.sleep(10)
         exit(0)
-    if end < first or end > 401:
+    if end < first or end > maxphoto:
         print('错误，超出范围，程序终止')
         time.sleep(10)
         exit(0)
