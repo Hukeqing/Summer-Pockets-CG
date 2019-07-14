@@ -15,9 +15,18 @@ img.photo{
     margin-right: 20px;
     margin-bottom: 20px;
 }
-/* div.centers {
-    width: 700pt;
-    justify-content: center;
-    display: flex;
-    margin: 0 auto;
-} */
+.linker a:link {
+    color: darkgreen;
+    font-weight: 700;
+    font-size: 20pt;
+}
+.linker a:visited {
+    color: purple;
+    font-weight: 400;
+    font-size: 15pt;
+}
+.linker a:hover {
+    color: blue;
+    font-size: 25pt;
+    font-weight: 900;
+}

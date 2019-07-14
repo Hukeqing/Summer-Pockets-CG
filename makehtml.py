@@ -6,7 +6,7 @@ htmlfile.write('<!DOCTYPE html>\n<html>\n<head>\n<meta charset="utf-8">\n<title>
 for line in sourcefile:
     htmlfile.write('<a href="' + line + '" target="_blank"><img class="photo"src="' + line + '"> </a>\n')
     count+=1
-    if count == 45:
+    if count == 40:
         htmlfile.write('</div></body></html>')
         htmlfile.close()
         curid += 1
