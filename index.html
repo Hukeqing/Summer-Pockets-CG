@@ -5,6 +5,7 @@
     <meta charset='utf-8'>
     <title>Summer Pockets CG</title>
     <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js"></script>
 </head>
 
 <body>
@@ -30,7 +31,7 @@
             为了避免加载过慢，此网页的所有图片采用图床的方式保存且每页仅保存40张(共计395张，有部分图片因国内原因被和谐，但是仍可以查看、下载，只是可能加载速度相对较慢)
         </p>
         <p style="color:magenta;">
-            如需批量下载CG图片，请点击<a id="download" target="_blank" download="SPCG_Download.exe"
+            如需批量下载CG图片，请点击<a id="download" target="_blank" download="SPCG_Download.exe" id="download"
                 href="https://github.com/Hukeqing/Summer-Pockets-CG/releases/download/V3.1/SPCG_Download.exe">
                 <img src="downloads.png" width="50px" height="50px" />
             </a>下载我自己编写的下载器，可以快速下载所有的CG
@@ -46,6 +47,16 @@
         <p>
             P.S.：除此网页外，所有的网页、链接都是由python代码直接生成，如果出现任何错误或者奇怪的地方，请尽快联系我
         </p>
+        <script>
+            $.ajax({
+                url: 'https://api.github.com/repos/Hukeqing/Summer-Pockets-CG/releases/latest',
+                type: 'get',
+                success: function (response) {
+                    downloadurl = "https://github.com/Hukeqing/Summer-Pockets-CG/releases/download/" + response.tag_name + "/SPCG_Download.rar";
+                    document.getElementById("download").href = downloadurl;
+                }
+            });
+        </script>
     </div>
     <div>
         <h2>
