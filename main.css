@@ -30,3 +30,22 @@ img.photo{
     font-size: 25pt;
     font-weight: 900;
 }
+div.centers {
+    justify-content: center;
+    display: flex;
+    margin: 0 auto;
+}
+div.main {
+    background-image: url("http://m.qpic.cn/psb?/V12gDDWR0Yw3qy/EcuH*Mhhd.FIadoYv4KHc3cW4IIN4x94dR2hISDGba0!/b/dL8AAAAAAAAA");
+    height: 500px;
+    width: 1500px;
+}
+h1.titles {
+    display: block;
+    letter-spacing: 1px;
+    font-weight: bolder;
+    text-align: center;
+    font-size: 50pt;
+    color: black;
+    text-shadow: 5px 5px 5px #FFFF70;
+}
