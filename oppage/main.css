@@ -1,0 +1,51 @@
+iframe.bgm{
+    border: 0px;
+    margin: 0px 0px 0px 0px;
+    width: 330px;
+    height: 86px;
+    position: fixed;
+    right: 10px;
+    top: 10px;
+}
+img.photo{
+    width: 640px;
+    height: 360px;
+    margin-left: 20px;
+    margin-top: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+.linker a:link {
+    color: darkgreen;
+    font-weight: 700;
+    font-size: 20pt;
+}
+.linker a:visited {
+    color: purple;
+    font-weight: 400;
+    font-size: 15pt;
+}
+.linker a:hover {
+    color: blue;
+    font-size: 25pt;
+    font-weight: 900;
+}
+div.centers {
+    justify-content: center;
+    display: flex;
+    margin: 0 auto;
+}
+div.main {
+    background-image: url("http://m.qpic.cn/psb?/V12gDDWR0Yw3qy/EcuH*Mhhd.FIadoYv4KHc3cW4IIN4x94dR2hISDGba0!/b/dL8AAAAAAAAA");
+    height: 500px;
+    width: 1500px;
+}
+h1.titles {
+    display: block;
+    letter-spacing: 1px;
+    font-weight: bolder;
+    text-align: center;
+    font-size: 50pt;
+    color: black;
+    text-shadow: 5px 5px 5px #FFFF70;
+}
