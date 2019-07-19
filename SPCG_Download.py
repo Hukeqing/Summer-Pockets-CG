@@ -441,7 +441,7 @@ def download(id):
 first = 1
 end = len(source) + 1
 maxphoto = 395
-photoperpage  = 40
+photoperpage = 40
 maxpage = 10
 
 if mode == 1:
