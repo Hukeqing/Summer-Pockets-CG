@@ -441,7 +441,7 @@ def download(id):
 first = 1
 end = len(source) + 1
 maxphoto = 395
-photoperpage  = 40
+photoperpage = 40
 maxpage = 10
 
 if mode == 1:
@@ -484,7 +484,7 @@ else:
         exit(0)
 
 while first <= end:
-    print('正在下载图片：编号', first);
+    print('正在下载图片：编号', first)
     if len(source[first]) < 90:
         print('正在下载被和谐的图片，可能会出现下载停滞，请耐心等待（如果长时间未反应，可以选择直接终止）')
     download(first)
