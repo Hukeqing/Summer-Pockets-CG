@@ -1,0 +1,99 @@
+/* body {
+    cursor: url("../../cursors/default.cur"), default;
+} */
+div.main {
+    background-repeat: no-repeat;
+    background-size: 1600px 900px;
+    position: fixed;
+    width: 1600px;
+    height: 900px;
+}
+
+div.button {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    z-index: 999;
+}
+a.noline {
+    padding-top: 10px;
+    text-decoration: none;
+    font-size: 60px;
+    font-weight: bold;
+    cursor: url("../../cursors/pointer.cur"), default;
+}
+:link {
+    color: gray;
+}
+:visited {
+    color: gray;
+}
+:hover {
+    color: gray;
+}
+
+div.main span {
+    display: inline-flex;
+    width: 155.67px;
+    height: 87.56px;
+    background-color: white;
+    box-shadow: 0px 5px 5px gray;
+    /* margin-left: -3px; */
+    /* animation: fall 5s infinite;
+    -webkit-animation: fall 5s linear forwards; */
+}
+
+span.fall {
+    display: inline-flex;
+    width: 9.73%;
+    height: 9.73%;
+    background-color: red;
+    z-index: 100;
+    box-shadow: 0px 5px 5px gray;
+    animation: fall 3s linear forwards;
+    -webkit-animation: fall 3s linear forwards;
+}
+
+@keyframes fall
+{
+    0% {
+        background-color: red;
+        transform: translateY(0) rotate(0deg);
+        display: inline;
+        box-shadow: 0px 5px 5px gray;
+    }
+    90% {
+        background-color: rgba(255, 0, 0, 0.3);
+        transform: translateY(1200px) rotate(30deg);
+        display: inline;
+        box-shadow: 0px 5px 5px gray;
+    }
+    100% {
+        background-color: rgba(255, 0, 0, 0);
+        transform: translateY(1200px) rotate(30deg);
+        display: none;
+        box-shadow: 0px 0px 0px gray;
+    }
+}
+
+@-webkit-keyframes fall
+{    
+    0% {
+        background-color: red;
+        transform: translateY(0) rotate(0deg);
+        display: inline;
+        box-shadow: 0px 5px 5px gray;
+    }
+    90% {
+        background-color: rgba(255, 0, 0, 0.3);
+        transform: translateY(1200px) rotate(30deg);
+        display: inline;
+        box-shadow: 0px 5px 5px gray;
+    }
+    100% {
+        background-color: rgba(255, 0, 0, 0);
+        transform: translateY(1200px) rotate(30deg);
+        display: none;
+        box-shadow: 0px 0px 0px gray;
+    }
+}
