@@ -33,7 +33,7 @@
         </p>
         <p style="color:magenta;">
             如需批量下载CG图片，请点击<a id="download" target="_blank" download="SPCG_Download.exe" id="download"
-                href="https://github.com/Hukeqing/Summer-Pockets-CG/releases/download/V4.0/SPCG_Download_GUI.exe">
+                href="https://github.com/Hukeqing/SPCG-Download/releases/download/V1.0/SPCG_Download_GUI.exe">
                 <img src="image/downloads.png" width="30px" height="30px" />
             </a>下载我自己编写的下载器(此为GUI版本，如果需要命令行版本可以前往GitHub的release页面下载)，可以快速下载所有的CG
         </p>
@@ -50,10 +50,10 @@
         </p>
         <script>
             $.ajax({
-                url: 'https://api.github.com/repos/Hukeqing/Summer-Pockets-CG/releases/latest',
+                url: 'https://api.github.com/repos/Hukeqing/SPCG-Download/releases/latest',
                 type: 'get',
                 success: function (response) {
-                    downloadurl = "https://github.com/Hukeqing/Summer-Pockets-CG/releases/download/" + response.tag_name + "/SPCG_Download.rar";
+                    downloadurl = "https://github.com/Hukeqing/Summer-Pockets-CG/releases/download/" + response.tag_name + "/SPCG_Download_GUI.exe";
                     document.getElementById("download").href = downloadurl;
                 }
             });
@@ -64,53 +64,61 @@
             · 链接
         </h2>
         <div>
-        <div id="link" class="linker">
-            <a href="game/index.html" target="_blank">随机浏览模式（内置小游戏）</a><br><br>
-            <a href="CGpage/1.html" target="_blank">第1页：ALKA线、紬线</a><br>
-            <a href="CGpage/2.html" target="_blank">第2页：紬线</a><br>
-            <a href="CGpage/3.html" target="_blank">第3页：紬线、白羽线</a><br>
-            <a href="CGpage/4.html" target="_blank">第4页：白羽线</a><br>
-            <a href="CGpage/5.html" target="_blank">第5页：白羽线、游戏中的物品</a><br>
-            <a href="CGpage/6.html" target="_blank">第6页：游戏中的物品、Summer Pockets线</a><br>
-            <a href="CGpage/7.html" target="_blank">第7页：Summer Pockets线、鸥线</a><br>
-            <a href="CGpage/8.html" target="_blank">第8页：鸥线、共通线、ALKA线日记</a><br>
-            <a href="CGpage/9.html" target="_blank">第9页：ALKA线日记、苍线</a><br>
-            <a href="CGpage/10.html" target="_blank">第10页：苍线(此处有两张被和谐的图片，已更换图床，但加载较(非常)慢)</a><br><br>
-            <a href="oppage/ed01.html" target="_blank">OP（官方原版版，bilibili外链）</a><br>
-            <a href="oppage/opCHS.html" target="_blank">OP（夏日纯臻汉化组汉化版，bilibili外链）</a><br>
-            <a href="oppage/ed01.html" target="_blank">ED（白羽、紬、鸥、苍线的ED，bilibili外链）</a><br>
-            <a href="oppage/edALKA.html" target="_blank">ED（ALKA线ED，bilibili外链）</a><br>
-            <a href="oppage/edSummerPockets.html" target="_blank">ED（Summer Pockets线ED，bilibili外链）</a>
+            <div id="link" class="linker">
+                <a href="game/index.html" target="_blank">随机浏览模式（内置小游戏）</a><br><br>
+                <a href="CGpage/1.html" target="_blank">第1页：ALKA线、紬线</a><br>
+                <a href="CGpage/2.html" target="_blank">第2页：紬线</a><br>
+                <a href="CGpage/3.html" target="_blank">第3页：紬线、白羽线</a><br>
+                <a href="CGpage/4.html" target="_blank">第4页：白羽线</a><br>
+                <a href="CGpage/5.html" target="_blank">第5页：白羽线、游戏中的物品</a><br>
+                <a href="CGpage/6.html" target="_blank">第6页：游戏中的物品、Summer Pockets线</a><br>
+                <a href="CGpage/7.html" target="_blank">第7页：Summer Pockets线、鸥线</a><br>
+                <a href="CGpage/8.html" target="_blank">第8页：鸥线、共通线、ALKA线日记</a><br>
+                <a href="CGpage/9.html" target="_blank">第9页：ALKA线日记、苍线</a><br>
+                <a href="CGpage/10.html" target="_blank">第10页：苍线(此处有两张被和谐的图片，已更换图床，但加载较(非常)慢)</a><br><br>
+                <a href="oppage/ed01.html" target="_blank">OP（官方原版版，bilibili外链）</a><br>
+                <a href="oppage/opCHS.html" target="_blank">OP（夏日纯臻汉化组汉化版，bilibili外链）</a><br>
+                <a href="oppage/ed01.html" target="_blank">ED（白羽、紬、鸥、苍线的ED，bilibili外链）</a><br>
+                <a href="oppage/edALKA.html" target="_blank">ED（ALKA线ED，bilibili外链）</a><br>
+                <a href="oppage/edSummerPockets.html" target="_blank">ED（Summer Pockets线ED，bilibili外链）</a>
+            </div>
+            <p style="color: red">
+                所有的CG仅用于交流，学习和分享，严禁未经官方授权的任何商业用途，若因此引起的版权纠纷，本人不对所造成的后果负责。
+            </p>
         </div>
-        <p style="color: red">
-            所有的CG仅用于交流，学习和分享，严禁未经官方授权的任何商业用途，若因此引起的版权纠纷，本人不对所造成的后果负责。
-        </p>
-    </div>
-    <div>
-        <h3 style="color: darkorange">
-            · 制作者的小声BB：
-        </h3>
-        <p>
-            1、为每一页的增加了不同的bgm，点击右上方的播放可以听，友好起见我没有设置成自动播放。但是可能不是很应景而且我只挑了我觉得好听的也没考虑顺序，如果有修改意见可以发送邮件给我<br>
-            2、为每一张图片增加了编号，方便进行批量下载<br>
-            3、增加了OP的查看功能，下载OP功能同图片，只不过是按右边的按钮可以打开原始路径。不过视频不是很清晰，建议还是去B站看比较好。<br>
-            4、很想增加ED的说，但是因为实在没有时间去录制了，如果有录制好的(需要略微的剪辑我可以提供帮助)可以来找我，最好不要有水印的那种。<br>
-            5、因为最近比较忙，不知道什么时候能把图片分组一下，然后给一个建议的下载表什么的，但是估计是要无限延期了。<br>
-            6、如果有人也想要在这个页面上分享点自己的东西的话(比如截图、录制的视频，仅限Summer Pockets游戏中)，可以找我，然后我会教你如何提供给我链接。<br>
-            7、如果有人需要帮忙解包galgame的(特别是key社的)，可以联系我(因为我也想玩)，然后可以再做一个这样的页面出来，给大家分享
-        </p>
-        <p>
-            2019.7.19<br>
-            1、无聊的我做了一个看起来有点意思的网页，可以点击上面链接下的第一个链接进入<br>
-            2、我打算起手把原来的丑陋的下载器给更新一下，目前的想法是用 python 的 tkinter 包去做一个 GUI 界面
-        </p>
-        <p>
-            2019.7.23<br>
-            1、GUI 版本的下载器已经就位了，感觉……还行吧。至少没之前那么麻烦了，也提供了直接选择保存路径的方式，不过感觉有点点……奇怪吧，之后应该会改动。<br>
-            2、为了方便管理，下载器的程序我另开了一个仓库，<a href="https://github.com/Hukeqing/SPCG-Download">点这里前往</a>用的是 pyinstaller 包打包的。<br>
-            3、下载器中的预览功能说白了还是要打开网页的，我在尝试改成不需要网页打开，可以直接预览的，但是可能会很迟才上线
-        </p>
-    </div>
+        <div>
+            <h3 style="color: darkorange">
+                · 制作者的小声BB：
+            </h3>
+            <p>
+                1、为每一页的增加了不同的bgm，点击右上方的播放可以听，友好起见我没有设置成自动播放。但是可能不是很应景而且我只挑了我觉得好听的也没考虑顺序，如果有修改意见可以发送邮件给我<br>
+                2、为每一张图片增加了编号，方便进行批量下载<br>
+                3、增加了OP的查看功能，下载OP功能同图片，只不过是按右边的按钮可以打开原始路径。不过视频不是很清晰，建议还是去B站看比较好。<br>
+                4、很想增加ED的说，但是因为实在没有时间去录制了，如果有录制好的(需要略微的剪辑我可以提供帮助)可以来找我，最好不要有水印的那种。<br>
+                5、因为最近比较忙，不知道什么时候能把图片分组一下，然后给一个建议的下载表什么的，但是估计是要无限延期了。<br>
+                6、如果有人也想要在这个页面上分享点自己的东西的话(比如截图、录制的视频，仅限Summer Pockets游戏中)，可以找我，然后我会教你如何提供给我链接。<br>
+                7、如果有人需要帮忙解包galgame的(特别是key社的)，可以联系我(因为我也想玩)，然后可以再做一个这样的页面出来，给大家分享
+            </p>
+            <p>
+                2019.7.19<br>
+                1、无聊的我做了一个看起来有点意思的网页，可以点击上面链接下的第一个链接进入<br>
+                2、我打算起手把原来的丑陋的下载器给更新一下，目前的想法是用 python 的 tkinter 包去做一个 GUI 界面
+            </p>
+            <p>
+                2019.7.23<br>
+                1、GUI 版本的下载器已经就位了，感觉……还行吧。至少没之前那么麻烦了，也提供了直接选择保存路径的方式，不过感觉有点点……奇怪吧，之后应该会改动。<br>
+                2、为了方便管理，下载器的程序我另开了一个仓库，<a href="https://github.com/Hukeqing/SPCG-Download">点这里前往</a>用的是 pyinstaller
+                包打包的。<br>
+                3、下载器中的预览功能说白了还是要打开网页的，我在尝试改成不需要网页打开，可以直接预览的，但是可能会很迟才上线
+            </p>
+            <p>
+                2019.7.24<br>
+                1、肝了很久的终于把预览模式给弄好了，点击预览之后会在本地临时生成一个文件，然后会打开一个窗口，窗口里会是一张大小为 640x360 的图片，
+                不过可以放心，当年叉掉那个窗口的时候，临时文件也会被删除掉<br>
+                2、接下来可能会继续优化下载器的体验，至于之前那个黑框框的版本，应该就不会改动了，如果想要下载的话也是可以的。点<a
+                    href="https://github.com/Hukeqing/SPCG-Download/releases/download/V1.0/SPCG_Download.exe">这里</a>就可以下载了
+            </p>
+        </div>
 </body>
 
 </html>
