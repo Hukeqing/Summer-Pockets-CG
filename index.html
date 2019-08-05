@@ -53,7 +53,7 @@
                 url: 'https://api.github.com/repos/Hukeqing/SPCG-Download/releases/latest',
                 type: 'get',
                 success: function (response) {
-                    downloadurl = "https://github.com/Hukeqing/Summer-Pockets-CG/releases/download/" + response.tag_name + "/SPCG_Download_GUI.exe";
+                    downloadurl = "https://github.com/Hukeqing/SPCG-Download/releases/download/" + response.tag_name + "/SPCG_Download_GUI.exe";
                     document.getElementById("download").href = downloadurl;
                 }
             });
