@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <title>Summer Pockets Audio 20</title>
+    <link rel='stylesheet' type='text/css' media='screen' href='../style.css'>
+    <link rel="shortcut icon" href="../../image/SummerPockets.ico">
+    <script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js"></script>
+</head>
+
+<body>
+    <div class="bgm">
+        <audio id="bgm" src="20.mp3" style="display: none;" loop="loop"></audio>
+        <img id="musicicon" src="../wangyiyunyinleclick.png" class="bgm" onclick="muteorcontinue()" />
+        <script type="text/javascript">
+            var musicicon = document.getElementById("musicicon");
+            var startrotate = setInterval(function () { rotate() }, 1);
+            var curRotate = 0.0;
+            var Obj = document.getElementById("bgm");
+            musicicon.style.transform = "translate(-50%, -50%)";
+            function rotate() {
+                if (Obj.paused == false && Obj.currentTime > 0) {
+                    curRotate += 0.05;
+                    musicicon.style.transform = "translate(-50%, -50%)rotate(" + curRotate + "deg)";
+                    musicicon.style.filter = "grayscale(0%)";
+                }
+                else {
+                    musicicon.style.filter = "grayscale(20%)";
+                }
+            }
+            function muteorcontinue() {
+                if (Obj.paused) {
+                    startrotate = setInterval(function () { rotate() }, 1);
+                    Obj.muted = false;
+                    Obj.play();
+                }
+                else {
+                    clearInterval(startrotate);
+                    Obj.muted = true;
+                    Obj.pause();
+                }
+            }
+        </script>
+    </div>
+</body>
+
+</html>
